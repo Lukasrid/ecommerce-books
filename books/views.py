@@ -21,6 +21,13 @@ def all_books(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 books = books.annotate(lower_name=Lower('name'))
+            if sortkey == 'genre':
+                sortkey = 'genre__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            books = books.order_by(sortkey)
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -31,8 +38,8 @@ def all_books(request):
 
         if 'genre' in request.GET:
             genres = request.GET['genre'].split(',')
-            books = books.filter(genre__friendly_name__in=genres)
-            genres = Genre.objects.filter(friendly_name__in=genres)
+            books = books.filter(genre__name__in=genres)
+            genres = Genre.objects.filter(name__in=genres)
 
         if 'q' in request.GET:
             query = request.GET['q']
