@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    <p class="mb-0">{{ book.genre }}</p>
+                    <p class="mb-0">{{ book.genre.friendly_name }}</p>
                     {% if book.image %}
                     <a href="{{ book.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ book.image.url }}" alt="{{ book.title }}">
