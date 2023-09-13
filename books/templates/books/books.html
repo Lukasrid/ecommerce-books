@@ -23,11 +23,11 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
             <div class="product-container col-12">
                 <div class="row mt-1 mb-2">
-                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-                        <div class="sort-select-wrapper w-50">
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center">
+                        <div class="sort-select-wrapper w-40">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
@@ -36,6 +36,8 @@
                                 <option value="title_desc" {% if current_sorting == 'title_desc' %}selected{% endif %}>Title (Z-A)</option>
                                 <option value="genre_asc" {% if current_sorting == 'genre_asc' %}selected{% endif %}>Genre (A-Z)</option>
                                 <option value="genre_desc" {% if current_sorting == 'genre_desc' %}selected{% endif %}>Genre (Z-A)</option>
+                                <option value="used_asc" {% if current_sorting == 'used_asc' %}selected{% endif %}>New First</option>
+                                <option value="used_desc" {% if current_sorting == 'used_desc' %}selected{% endif %}>Used First</option>
                             </select>
                         </div>
                     </div>
@@ -104,4 +106,41 @@
             </div>
         </div>
     </div>
+    <div class="btt-button shadow-sm rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+            <p>Back to top</p>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
 {% endblock %}

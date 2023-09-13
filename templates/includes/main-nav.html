@@ -7,6 +7,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
                 <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'books' %}?sort=genre&direction=asc" class="dropdown-item ">By Genre</a>
+                <a href="{% url 'books' %}?sort=title&direction=asc" class="dropdown-item ">By Title</a>
                 <a href="{% url 'books' %}?sort=used&direction=desc" class="dropdown-item ">By Second Hand</a>
                 <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
             </div>
