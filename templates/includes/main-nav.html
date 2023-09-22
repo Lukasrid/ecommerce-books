@@ -5,47 +5,35 @@
                 All Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
+                <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
                 <a href="{% url 'books' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'books' %}?sort=genre&direction=asc" class="dropdown-item ">By Genre</a>
                 <a href="{% url 'books' %}?sort=title&direction=asc" class="dropdown-item ">By Title</a>
                 <a href="{% url 'books' %}?sort=used&direction=desc" class="dropdown-item ">By Second Hand</a>
-                <a href="{% url 'books' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fiction-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Fiction
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="fiction-link">
+                <a href="{% url 'books' %}?genre=adventure,fantasy,sci_fi" class="dropdown-item">All Fiction</a>
                 <a href="{% url 'books' %}?genre=adventure" class="dropdown-item">Adventure</a>
                 <a href="{% url 'books' %}?genre=fantasy" class="dropdown-item">Fantasy</a>
                 <a href="{% url 'books' %}?genre=sci_fi" class="dropdown-item">Science Fiction</a>
-                <a href="{% url 'books' %}?genre=adventure,fantasy,sci_fi" class="dropdown-item">All Fiction</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="non-fiction-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Non-Fiction
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="non-fiction-link">
+                <a href="{% url 'books' %}?genre=self_help,science,spirit" class="dropdown-item">All Non-Fiction</a>
                 <a href="{% url 'books' %}?genre=science" class="dropdown-item">Science</a>
                 <a href="{% url 'books' %}?genre=self_help" class="dropdown-item">Self-help</a>
                 <a href="{% url 'books' %}?genre=spirit" class="dropdown-item">Spirituality</a>
-                <a href="{% url 'books' %}?genre=self_help,science,spirit" class="dropdown-item">All Non-Fiction</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
