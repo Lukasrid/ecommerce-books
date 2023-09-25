@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environment
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-lukasrid-ecommercebooks-xvhi321oj2k.ws-eu104.gitpod.io', 'book-store-lukarid-9168f1b715ae.herokuapp.com', 'localhost']
 
