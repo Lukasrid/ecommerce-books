@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Mooli&display=swap');
 
 
 html {
@@ -10,7 +10,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #2e2e2e;
-    font-family: 'Lato';
+    font-family: 'Mooli';
 }
 
 /* from Bulma */
