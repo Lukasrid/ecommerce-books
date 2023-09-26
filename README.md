@@ -1,10 +1,10 @@
-# Flavoured Adventures
+# Book Store
 
-Flavoured Adventures is an online community where people can gather and share their recipes with each other from around the globe. The site allows user to browse existing recipes as well as the option to register and login in order to upload their own recipes or leave comments on other peoples recipes.
+Book Store is an online store where people can browse and purchase new and used books. 
 
-The Site can be accessed via https://flavoured-adventures-f1491c2fd119.herokuapp.com/
+The Site can be accessed via https://book-store-lukarid-9168f1b715ae.herokuapp.com/
 
-![Responsiveness](/static/images/Responsiveness.JPG)
+(ADD PICTURE RESPONSIVE)
 
 # User Experience Design
 
@@ -13,16 +13,16 @@ The Site can be accessed via https://flavoured-adventures-f1491c2fd119.herokuapp
 ---
 
 ### Site Goals
-The site is aimed to be used as a tool for people from all around the world to share their creations from the kitchen be it old or new. It is a place where people can go and browse the existing recipes for inspiration and new experiences. It is a place where people can share their thought and encouragements with other user. It is place for fun tasty adventures.
+The goal of the site is so that the owner can sell new and used books to customers from around the globe. The site should provide easy and quick ways to organise the meterial presented for the consumer so they may find what they are looking for with ease. For regular customers who wish to purchase books on a regular basis a profile page is provided where personal information is stored quick and convenient checkouts. A personal purchase history is also provided so registered customers may view their previous orders at any time. 
 
 ### Agile Planning
-The development of a recipe sharing website requires an organized and efficient approach. Agile methodology provides a flexible and iterative framework that promotes collaboration, adaptability, and continuous improvement. Here is an overview of the Agile plan for creating this recipe sharing website.
+The development of an ecommerce website requires an organized and efficient approach. Agile methodology provides a flexible and iterative framework that promotes collaboration, adaptability, and continuous improvement. Here is an overview of the Agile plan for creating this recipe sharing website.
 
-The first sprint, "Project Setup," focuses on establishing the project foundation. This includes setting up the repository and version control system, defining project goals and user stories, and creating a basic Django project structure. User registration and authentication functionality are implemented to ensure a secure and personalized experience. Database models for recipes and user profiles are developed, and initial templates are created.
+The first sprint, "Project Setup," focuses on establishing the project foundation. This includes setting up the repository and version control system, defining project goals and user stories, and creating a basic Django project structure. An html layout will be created to display the books using bootstrap.
 
-In the second sprint, "Recipe Browsing and Searching," the focus shifts to enhancing the user's ability to discover and explore recipes. Recipe listing functionality is implemented, allowing users to browse recipes based on cuisines. The search functionality is developed, enabling users to find recipes through keywords and ingredients. A detailed recipe view is created, providing users with comprehensive information, including ingredients, methodology and descriptions. Pagination is added to the recipe listing to enhance user experience, enabling them to navigate through numerous recipes efficiently. 
+In the second sprint, "Book navigation", a system to easily search for books will be implemented. This could be done by searching for specific keywords that match book titles, summaries or authors. The books will be put into specific genres that the customers could easily only display books from a specified genre if desired. The books on display will also have the option to be displayed in order of price, title, genre or new/used. Any book can be clicked so that you are taken to a new page where furthur more detailed information is provided about the selected book.
 
-The third sprint, "Recipe Management," allows user to be created and registered, which empowers registered users to contribute to the website by creating and editing their own recipes. The implementation of image upload functionality enhances the visual appeal of recipes. Validation and error handling mechanisms are put in place to ensure accurate and reliable recipe creation and editing. Additionally, a feedback functionality is incorporated, allowing users to provide their thoughts and experiences.
+The third sprint, "Checkout and payment," will allow users to add books to a bag where a total price will and the books ready for purchase 
 
 In the fourth sprint, "User Experience Enhancements," the focus shifts towards improving the overall user interface and experience. The website's design is refined to be visually appealing and user-friendly. Search functionality is enhanced with filtering options to facilitate quicker and more accurate recipe discovery.
 
