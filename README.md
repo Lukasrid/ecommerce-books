@@ -2,9 +2,7 @@
 
 Book Store is an online store where people can browse and purchase new and used books. 
 
-The Site can be accessed via https://book-store-lukarid-9168f1b715ae.herokuapp.com/
-
-ADD IMAGE RESPONSIVE
+![Homepage](media/readme/homepage.JPG)
 
 # User Experience Design
 
@@ -80,7 +78,7 @@ This project consited of 6 main Epics
 
     The navigation bar is located at the top of every page on the websit. It is used to help navigate the website from any page. 
 
-    ADD IMAGE
+    ![Homepage](media/readme/navbar.JPG)
 
     - Logo/Header -> Visual representations of the website and also works as a links back to homepage.
     - Login/Logout -> A button located in the top right hand corner that allows user to navigate to the login page or log out of their current account. Clicking on the icon will allow users to see if they are logged in. Users can also navigate to their peronal profile from this button. If the user is a developeer they can also use this button to navigate to the page to add books.
@@ -89,25 +87,34 @@ This project consited of 6 main Epics
     - Book Access -> Access to books or specific book genres available under the search bar in drop down menus.
 
 - *Toasts*
+    Error and success messages are displayed top right for certain actions and post requests.
+
+    ![Toast](media/readme/toast.JPG)
+
+- *Shopping Bag*
+    A preview of the shopping bag is displayed in the top right when items are added.
+
+    ![Shopping bag pop up](media/readme/shopping-bag-popup.JPG)
+
 #### **Homepage**
 - *Redirect to Books*
 
     On the homepage a button is presented to the user inviting them in to browse the book selection and redirects all the available books. A header is provided informing the user of a free delivery threshold.
 
-    ADD IMAGE HOMEPAGE
+    ![Hompage](media/readme/homepage.JPG)
 
 #### **Book Selection Page**
 - *Books and Order*
     
     The number of available books for the selected genre is displayed at the top left under the navigation bar and the a drop down menu to the right shows what kind of order the books are in and can also be used to reorganize the books.
 
-    ADD IMAGE DROPDOWN MENU
+    ![Dropdown menu](media/readme/dropdown-menu.JPG)
 
 - *Individual book boxes*
 
     All the available books for purchase are displayed in 4 columns.
 
-    ADD IMAGE BOOK SELECTION
+    ![Book boxes](media/readme/book-selection.JPG)
 
     - The number of available books for selected genre is displayed at the top.
     - The genre of the book each book displayed is stated atthe top of each book.
@@ -120,8 +127,7 @@ This project consited of 6 main Epics
 
 #### **Book Detail Page**
 
-ADD IMAGE BOOK DETAIL PAGE
-
+![Book description](media/readme/book-description.JPG)
 - *Book Details*
 
     The details of the book is displayed once again with an added summary of the book
@@ -136,7 +142,7 @@ ADD IMAGE BOOK DETAIL PAGE
 
 #### **Shopping Bag Page**
 
-ADD IMAGE SHOPPING BAG
+![Shopping bag](media/readme/shopping-bag.JPG)
 
 - *Book Info*
 
@@ -161,11 +167,10 @@ ADD IMAGE SHOPPING BAG
 
 #### **Checkout Page**
 
-ADD IMAGE CHECKOUT
-
+![Checkout](media/readme/checkout.JPG)
 - *Order Summary*
 
-    An order summary of items and calculated costs is displayed at the top
+    An order summary of items and calculated costs is displayed.
 
 - *Customer details*
 
@@ -185,17 +190,16 @@ ADD IMAGE CHECKOUT
 
 #### **Checkout Success Page**
 
-ADD IMAGE CHECKOUT SUCCESS
+![CHeckout success](media/readme/checkout-success.JPG)   
 
-    All information is displayed back to the user as well as with an order number and the date of purchase. A KEEP BROWSING BOOKS! button is down the bottom to take users back to the shopping page.
+ All information is displayed back to the user as well as with an order number and the date of purchase. A KEEP BROWSING BOOKS! button is down the bottom to take users back to the shopping page.
  
 
 #### **Sign Up/Login/Logout Pages**
 
 - *Sign Up*
 
-ADD IMAGE SIGNUP
-
+![Signup](media/readme/signup.JPG)
     The users can create an account with
     - Email Address (Email confirmation needed)
     - Username 
@@ -203,22 +207,20 @@ ADD IMAGE SIGNUP
 
 - *Login*
 
-ADD IMAGE LOGIN
+![Login](media/readme/Login.JPG)
 
     The user can log in with their username and password and request a password recovery email incase password is forgotten.
 
 - *Logout*
 
-ADD IMAGE LOGOUT
-
+![Logout](media/readme/logout.JPG)
     The user is presented with a page witht he options to either signout or cancel.
 
 #### **Book Management Page**
 
 - *Add a New Book*
 
-ADD IMAGE NEW BOOK
-
+![Add book](media/readme/add-book.JPG)
     If the user is an admin they can access the book management site under their account icon. Here they can add a book with the following information where theones marked with a * are compulsory:
     
     - Genre
@@ -231,8 +233,6 @@ ADD IMAGE NEW BOOK
     - Option to marked product as used
 
 - *Edit Book*
-
-ADD IMAGE EDIT BOOK
 
     If a user is an admin they can edit a book through one of the edit book buttons scattered around the site. This will bring them back to the exact same layout as the Add Book page only with the information already filled in. Here they can shoose to edit and update the book details.
 
@@ -265,11 +265,11 @@ A
 # Technologies
 
 - HTML
-  - The structure of the Website was developed using HTML as the main language.
+    The structure of the Website was developed using HTML as the main language.
 - CSS
-  - The Website was styled using custom CSS in an external file.
+    The Website was styled using custom CSS in an external file.
 - JavaScript
-  - JavaScript was used for 
+    JavaScript was used for 
     - Animation 
     - Country fields
     - Stripe Elements
@@ -280,35 +280,47 @@ A
     - Sorting books
     - Toast
 - Python
-  - Python was the main programming language used for the application using the Django Framework.
+    Python was the main programming language used for the application using the Django Framework.
 - PostgreSQL
-    - The database where all data is stored that is put into the website.
-- Cloudinary
-    - Where all the images that get uploaded are stored
-- Visual Studio Code
-  - The website was developed using Visual Studio Code IDE
+    The database where all data is stored that is put into the website.
+- Stripe
+    - Used for the intergrated payment system.
+- Allauth
+    Used for the authentication methods of users
 - GitHub
-  - Source code is hosted on GitHub
+    Source code is hosted on GitHub
 - Git
-  - Used to commit and push code during the development of the Website
+    Used to commit and push code during the development of the Website
 - Font Awesome
-  - This was used for icons throughout the site
-- Favicon.io
-  - favicon files were created at https://favicon.io/favicon-converter/
+    This was used for icons throughout the site
+- Heroku
+    Hosting the website
+- Amazon Web Services
+    - Storing files
 
 ### External Python Modules
-- asgiref==3.7.2
-- cloudinary==1.33.0
-- dj-database-url==0.5.0
-- dj3-cloudinary-storage==0.0.6
-- Django==3.2.3
-- gunicorn==20.1.0
-- Pillow==9.5.0
-- psycopg2==2.9.6
-- pytz==2023.3
-- sqlparse==0.4.4
-- urllib3==1.26.16
-- whitenoise==6.5.0
+asgiref==3.7.2
+boto3==1.28.53
+botocore==1.31.53
+dj-database-url==0.5.0
+Django==3.2.21
+django-allauth==0.41.0
+django-countries==7.2.1
+django-crispy-forms==1.14.0
+django-storages==1.14
+gunicorn==21.2.0
+jmespath==1.0.1
+oauthlib==3.2.2
+ordereddict==1.1
+Pillow==10.0.0
+psycopg2==2.9.7
+python3-openid==3.2.0
+pytz==2023.3.post1
+requests-oauthlib==1.3.1
+s3transfer==0.6.2
+sqlparse==0.4.4
+stripe==6.5.0
+urllib3==1.26.16
 
 
 # Testing
@@ -316,66 +328,20 @@ A
 The website has been thoroughly tested to see if it work, these include:
 
 - All processed information gets stored in the linked up PostgreSQL database.
-- All uploaded images get stored and viewd via Cloudinary.
+- Book organisation works correctly
+- Stripe payments get processed succesfully.
 - All links are working and take you to the right destination.
-- All no information can be submitted without the right content and the required fields filled in.
-- Non-registered users do not have access to features.
-- Registered users do have access to features.
-- Activity shows up in the correct order of when created/edited on all pages.
-- Only relavant information shows up when viewing specific cuisines or profile pages.
-
-## Validator Testing
-### HTML Validator
-The website was run through [W# HTML Validator](https://validator.w3.org/)
-
-![HTML Validator](/static/images/HTML%20checker.JPG)
+- No information can be submitted without the right content and the required fields filled in.
+- Anonymous users can make purchase.
+- Registered user can store their information and make purchases
+- Toasts work correctly
+- Email function works for confirming users email
 
 ### Lighthouse
-The lighthouse report showed decent results with areas of improvement in SEO and Best Practices.
+The lighthouse report showed decent results with areas of improvement in SEO and accessibility.
 
-![Lighthouse results](/static/images/lighthouse%20results.JPG)
+![Lighthouse](media/readme/lighthouse.JPG)
 
-
-# Development
-### Version Control
-
-The site was created using the Visual Studio Code editor and pushed to github to the remote repository ‘recipe-tracker’.
-
-The following git commands were used throughout development to push code to the remote repo:
-
-```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
-
-```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
-
-```git push``` - This command was used to push all committed code to the remote repository on github.
-
-### Heroku Deployment
-
-The site was deployed to Heroku. The steps to deploy are as follows:
-
-- Navigate to heroku and create an account
-- Click the new button in the top right corner
-- Select create new app
-- Enter app name
-- Select region and click create app
-- Click the resources tab and search for Heroku Postgres
-- Select hobby dev and continue
-- Go to the settings tab and then click reveal config vars
-- Add the following config vars:
-  - SECRET_KEY: (Your secret key)
-  - DATABASE_URL: (This should already exist with add on of postgres)
-  - EMAIL_HOST_USER: (email address)
-  - EMAIL_HOST_PASS: (email app password)
-  - CLOUNDINARY_URL: (cloudinary api url)
-- Click the deploy tab
-- Scroll down to Connect to GitHub and sign in / authorize when prompted
-- In the search box, find the repositoy you want to deploy and click connect
-- Scroll down to Manual deploy and choose the main branch
-- Click deploy
-
-The app should now be deployed.
-
-The live link can be found here: [Live Site](https://flavoured-adventures-f1491c2fd119.herokuapp.com/)
 
 ### Run Locally
 
@@ -399,10 +365,4 @@ Most commonly, forks are used to either propose changes to someone else's projec
 
 - This will create a duplicate of the full project in your GitHub Repository.
 
-
-# Credits
-
- ## Content
-
- ## Acknoledgements
  
