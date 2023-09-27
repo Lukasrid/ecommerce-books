@@ -22,7 +22,7 @@ The first sprint, "Project Setup," focuses on establishing the project foundatio
 
 In the second sprint, "Book Navigation," a system to easily search for books will be implemented. This could be done by searching for specific keywords that match book titles, summaries or authors. The books will be put into specific genres that the customers could easily only display books from a specified genre if desired. The books on display will also have the option to be displayed in order of price, title, genre or new/used. Any book can be clicked so that you are taken to a new page where furthur more detailed information is provided about the selected book.
 
-The third sprint, "Checkout and Payment," will allow users to add/remove books to a checkout bag where a total price will be calculated and the books ready for purchase will be on display. The user is can proceede to an intergrated payment system when when ready and fill in shipping detail.
+The third sprint, "Checkout and Payment," will allow users to add/remove books to a shopping bag where a total price will be calculated and the books ready for purchase will be on display. The user is can proceede to an intergrated payment system when when ready and fill in shipping detail.
 
 In the fourth sprint, "User Profile and CRUD," users will be able to create accounts where they can store their personal shipping information and view previous purchases. Site admins will have access to add, delete and update books in the system
 
@@ -84,7 +84,7 @@ This project consited of 6 main Epics
 
     - Logo/Header -> Visual representations of the website and also works as a links back to homepage.
     - Login/Logout -> A button located in the top right hand corner that allows user to navigate to the login page or log out of their current account. Clicking on the icon will allow users to see if they are logged in. Users can also navigate to their peronal profile from this button. If the user is a developeer they can also use this button to navigate to the page to add books.
-    - Checkout bag -> A button next to the user profile button at the top right where users have access to their checkout bag.  
+    - Shopping bag -> A button next to the user profile button at the top right where users have access to their shopping bag.  
     - Search Bar -> The search bar located in the middle at the top of the screen where users can type in search phrases to search for books.
     - Book Access -> Access to books or specific book genres available under the search bar in drop down menus.
 
@@ -102,7 +102,6 @@ This project consited of 6 main Epics
 
     ADD IMAGE DROPDOWN MENU
 
-
 - *Individual book boxes*
 
     All the available books for purchase are displayed in 4 columns.
@@ -111,69 +110,130 @@ This project consited of 6 main Epics
 
     - The number of available books for selected genre is displayed at the top.
     - The genre of the book each book displayed is stated atthe top of each book.
-    - A picture of the book cover is then displayed
+    - A picture of the book cover is then displayed which when clicked brings the user to the book detail page
     - Followed by a the book title.
     - And then the Author.
     - A tag is then displayed if the book is used.
     - And then the price is displayed at the bottom.
     - If the user is a developer an Edit/Delete option is displayed under the price.
-#### **Profile Page**
 
-    Same as Homepage but the 'main feed' and 'recent activity feed' only show activity related to the user. Their name is also printed out at the top of the 'main feed'
+#### **Book Detail Page**
 
-![Profile Page](/static/images/Profile.JPG)
+ADD IMAGE BOOK DETAIL PAGE
 
+- *Book Details*
 
+    The details of the book is displayed once again with an added summary of the book
 
-#### **Create Recipe Page**
+- *Add to Bag*
 
-![Create Recipe](/static/images/Create%20Recipe.JPG)
+    The user can then select a quantity using the +/- signs or by typin gin a quantity and press the ADD TO BAG button if they want to put the book(s) into their shopping bag. If not a KEEP SHOPPING button is also displayed wich brings the user back to all the books.
 
-- *Dish*
+- *Edit/Delete* 
 
-    The user can enter a name for the recipe.
+    The developers will have the option to edit or delete the book. 
 
-- *Cuisine*
+#### **Shopping Bag Page**
 
-    The user can select a cuisine the dish belongs to from a dropdown menu. The user is unable to create their own unique cuisines.
+ADD IMAGE SHOPPING BAG
 
-- *Description*
+- *Book Info*
 
-    The user can write a breif description of the recipe.
+    Some of the information of the book will be displayed
 
-- *Ingredients*
+    - Book cover image
+    - Book title
+    - SKU code
+    - Unit price
+    - Quantity with the option to adjust/remove it
+    - The subtotal for that specific book
 
-    The user can write down a list of ingredients for the recipe.
+- *Bag Total*
 
-- *Method*
+    Information of total and delivery cost will be calculated for the user
 
-    The user can write down instructions on how to prepare the recipe.
+    - Bagtotal without delivery cost
+    - Delivery cost
+    - Grand total
+    - Information on how much more is needed to be spent for free shipping
+    - A SECURE CHECKOUT button to bring the user to the checkout page
 
-- *Image*
+#### **Checkout Page**
 
-    The user can choose to include an image of the completed dish. (Optional)
+ADD IMAGE CHECKOUT
 
-- *Submit*
+- *Order Summary*
 
-    The user then can click submit to send off the information to be stored in a PostgreSQL database to then be presented on the website. 
+    An order summary of items and calculated costs is displayed at the top
 
-#### **Delete Page**
-    When a a user tries to delete a recipe that they have created, they are redirected to the delete page where they are asked if they are sure about their choice. They then have the option to cancel by pressing 'Go Back' or to delete it by pressing 'Confirm'.
+- *Customer details*
 
-![Delete Page](/static/images/Delete%20page.JPG)
+    Customer details are then to be provided
 
-#### **Login Page**
+    - Full Name
+    - Email
+    - Phone number
+    - Address
+    - Town/City
+    - Post Code
+    - County
+    - Country
+    - Option to save information
+    - Card information
+    - A COMPLETE ORDER button with the grand total printed underneath that will process the users payment and order 
 
-    The user can enter their email and password in the fields provided and then click sign in. If they however do not have an account they can press the 'Sign up!' button to be redirected to the Register Page.
+#### **Checkout Success Page**
 
-![Login](/static/images/Login%20Box.JPG)
+ADD IMAGE CHECKOUT SUCCESS
+
+    All information is displayed back to the user as well as with an order number and the date of purchase. A KEEP BROWSING BOOKS! button is down the bottom to take users back to the shopping page.
  
 
-#### **Register Page**
+#### **Sign Up/Login/Logout Pages**
 
-    The user can fill in the required fields and click the 'Register' button to register themselves as a member. They are also prompted with a 'Login' button at the bottom incase they already have an account.
+- *Sign Up*
 
-![Register Box](/static/images/Register%20Box.JPG)
+ADD IMAGE SIGNUP
+
+    The users can create an account with
+    - Email Address (Email confirmation needed)
+    - Username 
+    - Password
+
+- *Login*
+
+ADD IMAGE LOGIN
+
+    The user can log in with their username and password and request a password recovery email incase password is forgotten.
+
+- *Logout*
+
+ADD IMAGE LOGOUT
+
+    The user is presented with a page witht he options to either signout or cancel.
+
+#### **Book Management Page**
+
+- *Add a New Book*
+
+ADD IMAGE NEW BOOK
+
+    If the user is an admin they can access the book management site under their account icon. Here they can add a book with the following information where theones marked with a * are compulsory:
+    
+    - Genre
+    - SKU
+    - Title*
+    - Author*
+    - Summary*
+    - Price*
+    - Image URL or file
+    - Option to marked product as used
+
+- *Edit Book*
+
+ADD IMAGE EDIT BOOK
+
+    If a user is an admin they can edit a book through one of the edit book buttons scattered around the site. This will bring them back to the exact same layout as the Add Book page only with the information already filled in. Here they can shoose to edit and update the book details.
 
 ### Future Features
 - The registration form and the create recipe form will be stylized better (ran out of time to figure out how to do this).
