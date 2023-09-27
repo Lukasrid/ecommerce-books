@@ -1,3 +1,6 @@
+***Disclaimer***:
+Unfortunatley my real life job has been quite chaotic recently and I was unable to spend the time required to fully grasp the concepts that are here put forward. I started a project that got quite far along but the code got messy and I was unable to make it work in the end and had to scrap it. Short on time I now put forward a project that I can not call truly my own. I have however managed to learn a little bit more of Django and come to a realization that being a full stack developer is probably not my path here in life. I have learnt a lot about what I personally enjoy and gained a lot of insight into the world of programming. I have found it much more interesting and enjoyable to write backend code. I do not belive the following project meets the satisfactory criterea of assesment but I have tried through my circumstances non the less because advice and criticism is always welcomed. Without furthur ado i present:
+
 # Book Store
 
 Book Store is an online store where people can browse and purchase new and used books. 
