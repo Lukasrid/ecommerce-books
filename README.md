@@ -2,6 +2,10 @@
 
 Book Store is an online store where people can browse and purchase new and used books. 
 
+The site can be accessed at:
+
+[https://book-store-lukarid-9168f1b715ae.herokuapp.com/](https://book-store-lukarid-9168f1b715ae.herokuapp.com/)
+
 ![Homepage](media/readme/homepage.JPG)
 
 # User Experience Design
