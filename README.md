@@ -4,7 +4,7 @@ Book Store is an online store where people can browse and purchase new and used 
 
 The Site can be accessed via https://book-store-lukarid-9168f1b715ae.herokuapp.com/
 
-(ADD PICTURE RESPONSIVE)
+ADD IMAGE RESPONSIVE
 
 # User Experience Design
 
@@ -20,18 +20,18 @@ The development of an ecommerce website requires an organized and efficient appr
 
 The first sprint, "Project Setup," focuses on establishing the project foundation. This includes setting up the repository and version control system, defining project goals and user stories, and creating a basic Django project structure. An html layout will be created to display the books using bootstrap.
 
-In the second sprint, "Book navigation", a system to easily search for books will be implemented. This could be done by searching for specific keywords that match book titles, summaries or authors. The books will be put into specific genres that the customers could easily only display books from a specified genre if desired. The books on display will also have the option to be displayed in order of price, title, genre or new/used. Any book can be clicked so that you are taken to a new page where furthur more detailed information is provided about the selected book.
+In the second sprint, "Book Navigation," a system to easily search for books will be implemented. This could be done by searching for specific keywords that match book titles, summaries or authors. The books will be put into specific genres that the customers could easily only display books from a specified genre if desired. The books on display will also have the option to be displayed in order of price, title, genre or new/used. Any book can be clicked so that you are taken to a new page where furthur more detailed information is provided about the selected book.
 
-The third sprint, "Checkout and payment," will allow users to add books to a bag where a total price will and the books ready for purchase 
+The third sprint, "Checkout and Payment," will allow users to add/remove books to a checkout bag where a total price will be calculated and the books ready for purchase will be on display. The user is can proceede to an intergrated payment system when when ready and fill in shipping detail.
 
-In the fourth sprint, "User Experience Enhancements," the focus shifts towards improving the overall user interface and experience. The website's design is refined to be visually appealing and user-friendly. Search functionality is enhanced with filtering options to facilitate quicker and more accurate recipe discovery.
+In the fourth sprint, "User Profile and CRUD," users will be able to create accounts where they can store their personal shipping information and view previous purchases. Site admins will have access to add, delete and update books in the system
+
+In the fifth sprint, "User Experience Enhancements," the focus shifts towards improving the overall user interface and experience. The website's design is refined to be visually appealing and user-friendly. success and error messages will be displayed for actions performed on the site and a small pop up window will be displayed when changes to the bag is made.
 
 The final sprint, "Deployment and Final Touches," involves the deployment of the website on Heroku. The code is modified to work on all screen sizes through media quiries. Extensive testing and bug fixing are conducted to ensure a stable and error-free experience.
 
 #### Epics & User Stories
-This project consited of 5 main Epics
-
-Link to [user stories](https://github.com/users/Lukasrid/projects/3/views/1)
+This project consited of 6 main Epics
 
 1. Project Setup
     - As a developer I need to develop a basic structure and layout so that i can easily navigate and edit the website
@@ -40,90 +40,83 @@ Link to [user stories](https://github.com/users/Lukasrid/projects/3/views/1)
     - As a developer I need to create models so that I know what information is going to be displayed and can be edited
     - As a developer I need to connect the website to a database so that all the information thats input into the website can be stored somewhere
 
-2. Recipe Browsing and Searching
-    - As a user I can browse different cuisines so that it is easier to navigate
-    - As a user I can browse through recipes with brief description so that I can get a quick overview of whats available
-    - As a user I can search for recipes so that its easy to find specific recipes
-    - As a user I can select a specific recipe and get all the information so that I can easily make it myself
-
-3. Recipe Management
-    - As a user I can see a picturre of the dish so that I can be furthured inspired to create it
-    - As a user I can register/login so that I can keep track of who's recipie is whos
-    - As a user I can add a recipe so that I and everyone can see it
-    - As a use I can edit and delete recipes that i have posted so that I am in control of my posts
-    - As a user I can see peoples individual profile pages so that view their activity on the website
-    - As a user I can comment on recipes so that I can provide feedback to the people the community
-    - As a user I can delete my comment so that i can control what i write
-
-4. User Experience Enhancements
-    - As a developer I want the site to be visually pleasing so that people will want to return
+2. Book Navigation
+    - As a user I can browse different genres so that it is easier to navigate
+    - As a user I can select a book to gain a furthur understanding of the contents of the book
+    - As a user I can search for books so that its easy to find books related to the search term
+    - As a user I can organize the books by price, title, author or used/new
+    - As a user I can see a picture of the book cover to grab my attention
     - As a user I can get result for searches with partial/incomplete words so that it makes searching easier
 
-5. Deployment and Final Touches
-    - As a developer I need the website to be available to the public so that people can use it
-    - As a user I can use the website on all my electronic devices so that I can access it anywhere I am
+
+3. Checkout and Payment
+    - As a user I can add/delete books to my checkout basket
+    - As a user I can view my basket with the total sum and contents I have placed into it
+    - As a user I can provide my shipping details
+    - As a user I can pay for my books
+    - As a developer I can safely store the users shipping information
+    - As a developer I can recive the users payment for their books
+
+4. User Profile and CRUD
+    - As a user I can register and log in to a personal profile
+    - As a user I can add my shipping details for faster checkout
+    - As a user I can view my previous purchases
+    - As a developer i can add, delete and update books on the website
+
+5. User Experience Enhancements
+    - As a developer I want the site to be visually pleasing so that people will want to return
     - As a user I am provided with a stable and bug free environment so that I can browse through the website with ease
+    - As a user I am provided with regular updates on the the things I am doing
 
+6. Deployment and Final Touches
+    - As a user I can use the website on all my electronic devices so that I can access it anywhere I am
+    - As a developer I need the website to be available to the public so that people can use it
 
-## The Scope Plane
-- Responsive design - Site should function on all standard modern devices 
-- CRUD functionality should be available to perform of recipes and comments
-- Access to CRUD should only be available to registered  users
-- Homepage should have an overview of recent activity
-- All recipes should be able to be filtered by cuisine
-- Profile pages should only have the users activity
 ## The Structure Plane
 ---
 ### Features
 #### **All Pages**
-- *Favicon*
-    
-    A favicon of the home logo was added so that the tab will always show what website you are on.
-
-    ![Favicon](/static/images/Favicon%20Snip.JPG)
 - *Navigation Bar*
 
-    The navigation bar is located at the top of every page on the websit. It is used to help navigate the websitefrom any page. 
+    The navigation bar is located at the top of every page on the websit. It is used to help navigate the website from any page. 
 
-    ![Navigation Bar](/static/images/Navbar.JPG)
+    ADD IMAGE
 
     - Logo/Header -> Visual representations of the website and also works as a links back to homepage.
-    - Login/Logout -> A button located in the top right hand corner that allows user to navigate to the login page or log out of their current account. Text underneath the button tells user if they are not logged in or who they are logged in as.
-    - Create Recipe -> The Create Recipe text is a link to the page where users can create their own recipes. 
-    - Search Bar -> The search bar located under the logo is where users can search for recipie names, cuisines, ingredients or descriptions. This search bar is activated when the eneter button is pressed on the keyboard.
+    - Login/Logout -> A button located in the top right hand corner that allows user to navigate to the login page or log out of their current account. Clicking on the icon will allow users to see if they are logged in. Users can also navigate to their peronal profile from this button. If the user is a developeer they can also use this button to navigate to the page to add books.
+    - Checkout bag -> A button next to the user profile button at the top right where users have access to their checkout bag.  
+    - Search Bar -> The search bar located in the middle at the top of the screen where users can type in search phrases to search for books.
+    - Book Access -> Access to books or specific book genres available under the search bar in drop down menus.
 
 #### **Homepage**
-- *Browse Cuisines*
+- *Redirect to Books*
 
-    On the homepage a Browse Cuisine list can be found which enables user to click on any of the available cuisines and be redirected to a page where only events and recipes related to that cuisine can be found.
+    On the homepage a button is presented to the user inviting them in to browse the book selection and redirects all the available books. A header is provided informing the user of a free delivery threshold.
 
-    ![Browse Cuisines](/static/images/Browse%20Cuisines.JPG)
+    ADD IMAGE HOMEPAGE
 
-- *Main Feed*
+#### **Book Selection Page**
+- *Books and Order*
+    
+    The number of available books for the selected genre is displayed at the top left under the navigation bar and the a drop down menu to the right shows what kind of order the books are in and can also be used to reorganize the books.
 
-    In the middle of the homepage a feed of the most recent recipes will come up in order of the creation or edited timestamp.
+    ADD IMAGE DROPDOWN MENU
 
-    ![Main Feed](/static/images/Main%20feed.JPG)
 
-    - A recipe counter in the top right shows how many recipes are avilable.
-    - Each recipe shown gives a cuisine, dish name, author name, description and an optional image.
-    - If the user viewing the recipe is also the author an Edit/Delete option will show up on the recipe.
-    - The cuisine, dish name, edit/delete and author name are all links that can be clicked and will direct the user to the appropriate page.
+- *Individual book boxes*
 
-- *Recent Activity Feed*
+    All the available books for purchase are displayed in 4 columns.
 
-    The Recent Activity feed can be found on the right hand side of the homepage that shows the most recent comments made on recipes.
+    ADD IMAGE BOOK SELECTION
 
-    ![Recent Activity Feed](/static/images/Activity%20feed.JPG)
-
-    - Only shows comments (for now).
-    - A user can see who, when and on what was commented on as well as the actual comment.
-    - A user viewing their own comment will be presented with a Delete option that removes the users comment.
-
-#### **Cuisine Page**
-
-    Same as Homepage but the 'main feed' and 'recent activity feed' only show activity related to that cuisine.
-
+    - The number of available books for selected genre is displayed at the top.
+    - The genre of the book each book displayed is stated atthe top of each book.
+    - A picture of the book cover is then displayed
+    - Followed by a the book title.
+    - And then the Author.
+    - A tag is then displayed if the book is used.
+    - And then the price is displayed at the bottom.
+    - If the user is a developer an Edit/Delete option is displayed under the price.
 #### **Profile Page**
 
     Same as Homepage but the 'main feed' and 'recent activity feed' only show activity related to the user. Their name is also printed out at the top of the 'main feed'
