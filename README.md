@@ -88,6 +88,7 @@ This project consited of 6 main Epics
     - Search Bar -> The search bar located in the middle at the top of the screen where users can type in search phrases to search for books.
     - Book Access -> Access to books or specific book genres available under the search bar in drop down menus.
 
+- *Toasts*
 #### **Homepage**
 - *Redirect to Books*
 
@@ -236,34 +237,30 @@ ADD IMAGE EDIT BOOK
     If a user is an admin they can edit a book through one of the edit book buttons scattered around the site. This will bring them back to the exact same layout as the Add Book page only with the information already filled in. Here they can shoose to edit and update the book details.
 
 ### Future Features
-- The registration form and the create recipe form will be stylized better (ran out of time to figure out how to do this).
-- A footer is to be added.
-- Users will be able to make a contact list of people they like.
-- Users will be able to save and favourite recipes.
-- Direct private messaging to other user will be implented.
-- Emails will be added so that admin can contact users.
-- Users will be able to request new cuisines at admin approval.
-- Users will be able to search for other usersand not only recipes.
-- Screen responsiveness will be improved.
-- Activity feed will include more than just comments.
-- Sweet and savoury catagories will be added for easier navigation.
-- Users will be able to add a profile picture and customize their profile page more.
-- A heading will be added at the top for when browing a specific cuisine.
-- The number of recipies available from a user will be displayed at the top of a profile page like it does for the homepage and cuisine catagories.
-- Users will be able to delete their account
-- Users will be able to report or flag inappropriate content.
+#### For Users
+- User will be able to favourite books that they might want to buy in the future and view them on a seperate page.
+- Users will be able to leave comments under the book details page where they can voice what they thought of the book.
+- A contact page will be added where users can get in touch with site admin.
+- Users will be able to pay through paypal.
+
+#### For Developers
+- When a book is deleted the developer will be prompted with a confirm window instead of the book being deleted straight away.
+- The number of books available for each title can be set , especially usefull for used books.
+- A book will be available in both new and used condition under the same book detail page if such option exist.
+- More ways to organize and browse books such as: year written, lannguage, length, age rating and new arrivals.
 
 
 ## The Surface Plane
 ### Design
 #### Color Scheme
-The main color schmemes used on the wbsite was a grey (#e0e0e0) for the background a kind of red (#800000) for highlighting important words and features. Rest of the text is black.
+The color scheme is a simple black to allow focus to be drawn toward the (often beautiful) book covers.
 #### Typography
-A font called "Cougette" was used as the main title and other key titles. The rest of the text id "Open Sans". The back up fonts are "Tahoma" and "Sans-Serif".
+The font 'Caveat' is used for the header elements to give off a human sense of touch, hand crafted like the books they are buying. 
+The font 'Mooli' is used for the smaller more important information for an easy read with a soft gentle curve for the eyes.
 #### Imagery
-The logo image was made using [freelogodesign.org](https://www.freelogodesign.org/).
 
-All other images were taken from [Pexels](https://www.pexels.com/).
+Background images was taken from [Pexels](https://www.pexels.com/).
+A
 
 # Technologies
 
@@ -272,7 +269,16 @@ All other images were taken from [Pexels](https://www.pexels.com/).
 - CSS
   - The Website was styled using custom CSS in an external file.
 - JavaScript
-  - JavaScript was used to insert icons.
+  - JavaScript was used for 
+    - Animation 
+    - Country fields
+    - Stripe Elements
+    - Updating bag quantity
+    - Removing item and reload on click
+    - Setting image
+    - Back to top button
+    - Sorting books
+    - Toast
 - Python
   - Python was the main programming language used for the application using the Django Framework.
 - PostgreSQL
